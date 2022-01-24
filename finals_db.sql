@@ -6,7 +6,7 @@ CREATE TABLE locations (
     loc_name VARCHAR(50)
 );
 
-COPY locations FROM 'C:\Users\Kian\Documents\GitHub\se2121-finals-covidvaccine\covid-19-data-master\public\data\vaccinations' DELIMITER ',' CSV;
+
 
 
 CREATE TABLE  vaccinations_by_manufacturer (
@@ -18,7 +18,7 @@ CREATE TABLE  vaccinations_by_manufacturer (
     vbm_total_vaccinations  INT NOT NULL
 );
 
-COPY vaccinations_by_manufacturer FROM 'C:\Users\Kian\Documents\GitHub\se2121-finals-covidvaccine\covid-19-data-master\public\data\vaccinations' DELIMITER',' CSV;
+
 
 
 CREATE TABLE vaccines (
@@ -26,7 +26,7 @@ CREATE TABLE vaccines (
     vac_name TEXT PRIMARY KEY;
 );
 
-COPY vaccines FROM 'C:\Users\Kian\Documents\GitHub\se2121-finals-covidvaccine\covid-19-data-master\public\data\vaccinations' DELIMITER ',' CSV;
+
 
 CREATE TABLE vaccinations_by_location (
     vbl_id SERIAL, 
@@ -35,7 +35,7 @@ CREATE TABLE vaccinations_by_location (
     vbl_source_website VARCHAR(100)
 );
 
-COPY vaccinations_by_manufacturer FROM 'C:\Users\Kian\Documents\GitHub\se2121-finals-covidvaccine\covid-19-data-master\public\data\vaccinations' DELIMITER',' CSV;
+
 
 
 
